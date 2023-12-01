@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'slave4'}
     stages{
         stage('Build Maven'){
             steps{
@@ -11,7 +11,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'sudo docker build -t rohithmarigowda/assignment .'
+                    sh 'docker build -t rohithmarigowda/assignment .'
                 }
             }
         }
