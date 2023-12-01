@@ -11,8 +11,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'sudo su'
-                    sh 'docker build -t rohithmarigowda/assignment .'
+                    sh 'sudo docker build -t rohithmarigowda/assignment .'
                 }
             }
         }
