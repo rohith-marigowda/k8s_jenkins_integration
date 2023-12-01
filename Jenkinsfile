@@ -18,11 +18,10 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'dockerhub', variable: 'dockerhub')]) {
-                   sh 'docker login -u javatechie -p ${dockerhub}'
+                   sh 'docker login -u marigowda -p Rohith@162993'
+                    sh 'docker push rohithmarigowda/assignment'
 
 }
-                   sh 'docker push javatechie/devops-integration'
                 }
             }
         }
