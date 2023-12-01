@@ -20,8 +20,6 @@ pipeline {
                 script{
                    sh 'docker login -u marigowda -p Rohith@162993'
                     sh 'docker push rohithmarigowda/assignment'
-
-}
                 }
             }
         }
