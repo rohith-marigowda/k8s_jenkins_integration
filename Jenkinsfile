@@ -12,6 +12,7 @@ pipeline {
             steps{
                 script{
                     sh 'su ubuntu'
+                    sh 'ubuntu'
                     sh 'docker build -t rohithmarigowda/assignment .'
                 }
             }
