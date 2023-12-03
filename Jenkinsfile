@@ -18,7 +18,7 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   sh 'docker login -u rohithmarigowda -p Rohith@162993'
+                   sh 'docker login -u {enterYourUsername} -p {enterYourPassword}'
                     sh 'docker push rohithmarigowda/assignment'
                 }
             }
